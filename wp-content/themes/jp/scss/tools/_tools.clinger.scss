@@ -1,0 +1,52 @@
+// Responsive Clinger
+
+html {
+    &:after {
+        // background-color: $gray;
+        bottom: 0;
+        color: $white;
+        background-color: $gray--transparent;
+        content: '';
+        font-family: font("display");
+        padding: 1em;
+        text-transform: uppercase;
+        @include j-center($max-width: 100%);
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        z-index: z-index('clinger');
+
+        // Each breakpoint
+        content: 'Mobile-Small'; // Default Mobile
+        
+        @include bp(mobile) {
+            content: 'Mobile';
+        }
+
+        @include bp(mobile-mid) {
+            content: 'Mobile-Mid';
+        }
+
+        @include bp(mobile-large) {
+            content: 'Mobile-Large';
+        }
+        @include bp(tablet) {
+            content: 'Tablet';
+        }
+        @include bp(tablet-mid) {
+            content: 'Tablet-Mid';
+        }        
+        @include bp(tablet-large) {
+            content: 'Tablet-Large';
+        }
+        @include bp(desktop) {
+            content: 'Desktop';
+        }
+        @include bp(desktop-medium) {
+            content: 'Desktop-Medium';
+        }
+        @include bp(desktop-large) {
+            content: 'Desktop-Large';
+        }
+    }
+}

@@ -1,0 +1,32 @@
+// // Fonts
+// @font-face {
+//   font-family: 'WorkSans Medium';
+//   src: url("../fonts/WorkSans-Medium.ttf")  format('truetype');
+// }
+
+// @font-face {
+//   font-family: 'WorkSans Bold';
+//   src: url("../fonts/WorkSans-Bold.ttf")  format('truetype');
+// }
+
+
+// // Font Stacks
+// $ws--medium:        "WorkSans Medium";
+// $ws--bold:          "WorkSans Bold";
+
+
+// /**
+//  * Semantic Font Map
+//  * use -- font(<name>);
+//  */
+// $fonts: (
+//   "display": $ws--bold,
+//   "paragraph": $ws--medium,
+//   "bold": $ws--bold,
+//   "med": $ws--medium
+// );
+
+// @function font($key: 'primary') {
+//     @return map-get($fonts, $key);
+// }
+

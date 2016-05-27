@@ -1,0 +1,13 @@
+/**
+ * z-index ordering
+ * use -- z-index(<name>);
+ */
+
+$z-indexes: (
+    "clinger": 9999
+);
+
+
+@function z-index($key: 'primary') {
+    @return map-get($z-indexes, $key);
+}

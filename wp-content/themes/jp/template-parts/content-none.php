@@ -9,12 +9,12 @@
 
 ?>
 
-<section class="section>
+<section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="title"><?php esc_html_e( 'Nothing Found', 'jp' ); ?></h1>
+		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'jp' ); ?></h1>
 	</header><!-- .page-header -->
 
-	<div class="content">
+	<div class="page-content">
 		<?php
 		if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 

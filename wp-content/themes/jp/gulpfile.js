@@ -37,11 +37,7 @@ gulp.task('sass', function() {
     return gulp.src('scss/site.scss')
     .pipe(plumber(plumberErrorHandler))
     .pipe(sourcemaps.init())
-    .pipe(sass({
-        includePaths: [
-            './node_modules/bulma',
-        ]
-    }))
+    .pipe(sass())
     .pipe(concat('site.css'))
     // .pipe(concat('site.min.css'))
     // .pipe(minifyCss())

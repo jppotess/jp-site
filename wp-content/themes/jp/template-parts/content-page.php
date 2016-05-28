@@ -10,22 +10,22 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="header">
-		<?php the_title( '<h1 class="title">', '</h1>' ); ?>
+	<header class="entry-header">
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<div class="content">
+	<div class="entry-content">
 		<?php
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="links">' . esc_html__( 'Pages:', 'jp' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'jp' ),
 				'after'  => '</div>',
 			) );
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="footer">
+	<footer class="entry-footer">
 		<?php
 			edit_post_link(
 				sprintf(
@@ -33,7 +33,7 @@
 					esc_html__( 'Edit %s', 'jp' ),
 					the_title( '<span class="screen-reader-text">"', '"</span>', false )
 				),
-				'<span class="link">',
+				'<span class="edit-link">',
 				'</span>'
 			);
 		?>

@@ -2,7 +2,6 @@
 
 html {
     &:after {
-        // background-color: $gray;
         bottom: 0;
         color: white;
         background-color: gray;
@@ -16,35 +15,21 @@ html {
         z-index: z-index('clinger');
 
         // Each breakpoint
-        content: 'Mobile-Small'; // Default Mobile
+        content: 'Mobile'; // Default Mobile
         
-        @include bp(mobile) {
-            content: 'Mobile';
-        }
-
-        @include bp(mobile-mid) {
-            content: 'Mobile-Mid';
-        }
-
-        @include bp(mobile-large) {
+        @include screen(mobile-l) {
             content: 'Mobile-Large';
         }
-        @include bp(tablet) {
+        @include screen(tablet) {
             content: 'Tablet';
         }
-        @include bp(tablet-mid) {
-            content: 'Tablet-Mid';
-        }        
-        @include bp(tablet-large) {
+        @include screen(tablet-l) {
             content: 'Tablet-Large';
         }
-        @include bp(desktop) {
+        @include screen(desktop) {
             content: 'Desktop';
         }
-        @include bp(desktop-medium) {
-            content: 'Desktop-Medium';
-        }
-        @include bp(desktop-large) {
+        @include screen(desktop-l) {
             content: 'Desktop-Large';
         }
     }

@@ -1,33 +1,35 @@
-// // Colors
+// Colors
+
+$stormy-sea-foam-blue: #037E83;
+$rorangey-red: #F24C27;
+
+$white: #fff;
+$black--light: #222;
+
+$gray--dark: #4F4F4F;
+$gray: #8C8C8C;
+$gray--light: #BFBFBF;
+
+// Semantic Colors
+$site-colors: (
+    "text": $black--light,
+    "primary": $stormy-sea-foam-blue,
+    "accent": $rorangey-red,
+    "border": $gray--light,
+);
 
 
-// // Semantic Colors
-// $site-colors: (
-//     "base": $black,
-//     "secondary": $gray,
-//     "accent": $red,
-//     "border": $gray--light,
-// );
+/**
+ * Semantic Colors Map
+ * use -- color(<semantic-name>)
+ */
+@function color($key: 'primary') {
+    @return map-get($site-colors, $key);
+}
 
 
-// /**
-//  * Semantic Colors Map
-//  * use -- color(<semantic-name>)
-//  */
-// @function color($key: 'primary') {
-//     @return map-get($site-colors, $key);
-// }
-
-
-// // Typography Colors
-// $text--body: color("base");
-// $text--heading: color("base");
-
-// // Links
-// $link-hover: color("accent");
-
-
-
+$link-color: color('accent');
+$text-color: color('text');
 
 
 

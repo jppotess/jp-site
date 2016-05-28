@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Roboto Thin';
+  src: url("../../fonts/Roboto-Thin.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../fonts/Roboto-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Roboto Italic';
+  src: url("../../fonts/Roboto-Italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url("../../fonts/Roboto-Bold.ttf") format("truetype"); }
+
+/**
+ * Semantic Font Map
+ * use -- font(<name>);
+ */
+/**
+ * Semantic Colors Map
+ * use -- color(<semantic-name>)
+ */
 /**
  * z-index ordering
  * use -- z-index(<name>);
@@ -7,39 +31,27 @@ html:after {
   color: white;
   background-color: gray;
   content: '';
-  font-family: font("display");
+  font-family: "Roboto bold";
   padding: 1em;
   text-transform: uppercase;
   text-align: center;
   position: fixed;
   width: 100%;
   z-index: 9999;
-  content: 'Mobile-Small'; }
-  @media (min-width: 360px) {
-    html:after {
-      content: 'Mobile'; } }
-  @media (min-width: 500px) {
-    html:after {
-      content: 'Mobile-Mid'; } }
+  content: 'Mobile'; }
   @media (min-width: 640px) {
     html:after {
       content: 'Mobile-Large'; } }
   @media (min-width: 768px) {
     html:after {
       content: 'Tablet'; } }
-  @media (min-width: 880px) {
-    html:after {
-      content: 'Tablet-Mid'; } }
-  @media (min-width: 960px) {
+  @media (min-width: 1024px) {
     html:after {
       content: 'Tablet-Large'; } }
-  @media (min-width: 1170px) {
+  @media (min-width: 1280px) {
     html:after {
       content: 'Desktop'; } }
-  @media (min-width: 1440px) {
-    html:after {
-      content: 'Desktop-Medium'; } }
-  @media (min-width: 1600px) {
+  @media (min-width: 1500px) {
     html:after {
       content: 'Desktop-Large'; } }
 

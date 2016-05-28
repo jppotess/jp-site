@@ -1,32 +1,46 @@
-// // Fonts
-// @font-face {
-//   font-family: 'WorkSans Medium';
-//   src: url("../fonts/WorkSans-Medium.ttf")  format('truetype');
-// }
+// Fonts
+@font-face {
+  font-family: 'Roboto Thin';
+  src: url("../../fonts/Roboto-Thin.ttf")  format('truetype');
+}
 
-// @font-face {
-//   font-family: 'WorkSans Bold';
-//   src: url("../fonts/WorkSans-Bold.ttf")  format('truetype');
-// }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../fonts/Roboto-Regular.ttf")  format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto Italic';
+  src: url("../../fonts/Roboto-Italic.ttf")  format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url("../../fonts/Roboto-Bold.ttf")  format('truetype');
+}
 
 
-// // Font Stacks
-// $ws--medium:        "WorkSans Medium";
-// $ws--bold:          "WorkSans Bold";
+// Font Stacks
+$rb--bold:      'Roboto bold';
+$rb--regular:   'Roboto Regular';
+$rb--italic:    'Roboto Italic';
+$rb--thin:      'Roboto Thin';
 
 
-// /**
-//  * Semantic Font Map
-//  * use -- font(<name>);
-//  */
-// $fonts: (
-//   "display": $ws--bold,
-//   "paragraph": $ws--medium,
-//   "bold": $ws--bold,
-//   "med": $ws--medium
-// );
+/**
+ * Semantic Font Map
+ * use -- font(<name>);
+ */
+$fonts: (
+  "display": $rb--bold,
+  "paragraph": $rb--regular,
+  "italic": $rb--italic,
+  "thin": $rb--thin,
+  "bold": $rb--bold,
+  "regular": $rb--regular,
+);
 
-// @function font($key: 'primary') {
-//     @return map-get($fonts, $key);
-// }
+@function font($key: 'primary') {
+    @return map-get($fonts, $key);
+}
 

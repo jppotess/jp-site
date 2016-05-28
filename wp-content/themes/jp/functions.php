@@ -114,7 +114,7 @@ add_action( 'widgets_init', 'jp_widgets_init' );
  * Enqueue scripts and styles.
  */
 function jp_scripts() {
-	wp_enqueue_style( 'jp-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'jp-style', get_template_directory_uri() . '/assets/css/site.css');
 
 	wp_enqueue_script( 'jp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

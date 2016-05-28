@@ -66,8 +66,7 @@ gulp.task("babel", function() {
     .pipe(reload({stream:true}));
 })
 
-
-// Clean Task - except images
+// Clean Task
 gulp.task('clean', function(){
     del.sync(['assets'])
 })
@@ -85,6 +84,7 @@ gulp.task('build', function(callback){
 gulp.task('watch', ['build'], function() {
     gulp.watch('src/styles/**/*.scss', ['sass']);
     gulp.watch('src/scripts/**/*.js', ['babel']);
+    gulp.watch('**/*.php').on('change', reload);
 })
 
 

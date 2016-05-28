@@ -4,13 +4,12 @@ html {
     &:after {
         // background-color: $gray;
         bottom: 0;
-        color: $white;
-        background-color: $gray--transparent;
+        color: white;
+        background-color: gray;
         content: '';
         font-family: font("display");
         padding: 1em;
         text-transform: uppercase;
-        @include j-center($max-width: 100%);
         text-align: center;
         position: fixed;
         width: 100%;

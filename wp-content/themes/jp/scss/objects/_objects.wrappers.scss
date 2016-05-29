@@ -8,7 +8,7 @@
     margin-bottom: rem(40px);
     overflow: hidden;
 
-    @include bp(tablet) {
+    @include screen(tablet) {
         @include j-center($pad: 40px);
     }
 }

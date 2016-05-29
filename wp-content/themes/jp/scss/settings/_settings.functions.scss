@@ -6,8 +6,6 @@
     @return #{$pixels/$context}rem
 }
 
-
-
 @function color($key: 'primary') {
     @return map-get($site-colors, $key);
 }

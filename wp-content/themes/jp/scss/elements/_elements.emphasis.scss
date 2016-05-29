@@ -1,0 +1,8 @@
+strong,
+b {
+    @include font-family("bold");
+}
+
+em {
+    @include font-family("italic");
+}

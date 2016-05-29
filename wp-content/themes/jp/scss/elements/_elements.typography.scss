@@ -1,33 +1,33 @@
+body {
+    @include font-family(regular);
+    color: color("base");
+    line-height: 1.45;
+}
+
+p {
+    margin-bottom: 1.3em
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: font("display");
+    margin: 1.414em 0 .5em;
+    @include font-family("display");
     line-height: 1.2;
 }
 
-h1, h2 {
-    margin-bottom: rem(16px);
-}
-
 h1 {
-    @include font-size(42px, 52px); 
+    margin-top: 0;
+    font-size: 3.157em;
 }
 
 h2 {
-    @include font-size(34px, 44px);
+    font-size: 2.369em;
 }
 
 h3 {
-    @include font-size(28px, 38px);
+    font-size: 1.777em;
 }
 
 h4 {
-    @include font-size(22px, 32px);
-}
-
-h5 {
-    @include font-size(19px, 32px);
-}
-
-h6 {
-    @include font-size(17px, 32px);
+    font-size: 1.333em;
 }
 

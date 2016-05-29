@@ -1,0 +1,46 @@
+@mixin font-size($font-size: $base-font-size, $line-height: auto) {
+    font-size: $font-size;
+    font-size: ($font-size / $base-font-size) * 1em;
+
+    @if $line-height == auto {
+        line-height: ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
+    }
+
+    @else {
+
+        @if (type-of($line-height) == number or $line-height == inherit or $line-height == normal) {
+            line-height: $line-height;
+        }
+
+        @elseif ($line-height != none and $line-height != false) {
+            @warn " ‘#{$line-height}’ is not a valid value for `line-height`."
+        }
+
+    }
+}
+
+@mixin font-family($font-family) {
+    @if $font-family == bold {
+        font-family: $rb--bold;
+    }
+
+    @if $font-family == display {
+        font-family: $rb--bold;
+    }    
+
+    @else if $font-family == regular {
+        font-family: $rb--regular
+    }
+
+    @else if $font-family == paragraph {
+        font-family: $rb--regular
+    }    
+
+    @else if $font-family == italic {
+        font-family: $rb--italic;
+    }       
+
+    @else if $font-family == thin {
+        font-family: $rb--thin;
+    }
+}

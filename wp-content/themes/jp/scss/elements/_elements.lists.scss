@@ -1,7 +1,6 @@
 ul,
 ol {
-    margin: rem(40px) 0;
-    list-style: none;
+    margin: rem(24px) 0;
 
     li {
         margin-bottom: rem(16px);
@@ -11,17 +10,5 @@ ol {
 ul {
     
     li {
-        position: relative;
-        padding-left: rem(20px);      
-
-        &:before {
-            position: absolute;
-            content: "";
-            height: 6px;
-            width: 6px;
-            background-color: color("accent");
-            top: 12px;
-            left: 5px;     
-        }
     }
 }

@@ -13,6 +13,6 @@
     }
 }
 
-// .o-container--inner {
-//     @include j-center($max-width: $inner-content-width)
-// }
+.o-container--inner {
+    @include j-center($max-width: $inner-content-width)
+}

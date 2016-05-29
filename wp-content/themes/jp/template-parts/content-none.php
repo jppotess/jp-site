@@ -9,7 +9,7 @@
 
 ?>
 
-<section>
+<section class="o-container--inner">
 	<header>
 		<h1><?php esc_html_e( 'Nothing Found', 'jp' ); ?></h1>
 	</header><!-- .page-header -->

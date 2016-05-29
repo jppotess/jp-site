@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<div>
+	<div class="o-container">
 		<main role="main">
 
 			<section>

@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<section>
+	<section class="o-container">
 		<main role="main">
 
 		<?php

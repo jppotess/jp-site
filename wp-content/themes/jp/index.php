@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-	<div>
+	<div class="o-container">
 		<main role="main">
 
 		<?php
@@ -49,8 +49,8 @@ get_header(); ?>
 		endif; ?>
 
 		</main><!-- #main -->
+		<?php get_sidebar(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

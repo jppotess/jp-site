@@ -12,14 +12,15 @@
 ?>
 
 	</div><!-- #content -->
-
-	<footer role="contentinfo">
-		<div>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'jp' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'jp' ), 'WordPress' ); ?></a>
-			<span> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'jp' ), 'jp', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+    <div class="o-wrapper">
+    	<footer role="contentinfo">
+    		<div>
+    			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'jp' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'jp' ), 'WordPress' ); ?></a>
+    			<span> | </span>
+    			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'jp' ), 'jp', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+    		</div><!-- .site-info -->
+    	</footer><!-- #colophon -->
+    </div>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

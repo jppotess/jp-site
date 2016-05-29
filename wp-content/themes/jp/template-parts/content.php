@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="o-container--inner" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header>
 		<?php
 			if ( is_single() ) {

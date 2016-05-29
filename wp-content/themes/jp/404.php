@@ -9,15 +9,15 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div>
+		<main role="main">
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'jp' ); ?></h1>
+			<section>
+				<header>
+					<h1><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'jp' ); ?></h1>
 				</header><!-- .page-header -->
 
-				<div class="page-content">
+				<div>
 					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'jp' ); ?></p>
 
 					<?php
@@ -29,7 +29,7 @@ get_header(); ?>
 						if ( jp_categorized_blog() ) :
 					?>
 
-					<div class="widget widget_categories">
+					<div>
 						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'jp' ); ?></h2>
 						<ul>
 						<?php

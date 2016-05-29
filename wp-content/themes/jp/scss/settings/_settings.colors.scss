@@ -4,7 +4,8 @@ $stormy-sea-foam-blue: #037E83;
 $rorangey-red: #F24C27;
 
 $white: #fff;
-$black--light: #222;
+$black: #222; // "black"
+
 
 $gray--dark: #4F4F4F;
 $gray: #8C8C8C;
@@ -12,7 +13,7 @@ $gray--light: #BFBFBF;
 
 // Semantic Colors
 $site-colors: (
-    "text": $black--light,
+    "text": $black,
     "primary": $stormy-sea-foam-blue,
     "accent": $rorangey-red,
     "border": $gray--light,
@@ -20,6 +21,7 @@ $site-colors: (
 
 
 $link-color: color('accent');
+$link-hover: lighten(color('accent'), 20%);
 $text-color: color('text');
 
 

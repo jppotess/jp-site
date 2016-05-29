@@ -1,0 +1,45 @@
+input,
+textarea {
+    color: color("base");
+    border: 1px solid color("base");
+    @include font-size($base-font-size);
+    padding: .5rem;
+    transition: $transition;
+
+    &:focus {
+        border-color: $link-hover;
+    }
+}
+
+input[type="submit"] {
+    border: none;
+    color: $black;
+    background-color: transparent;
+    border-bottom: 1px solid color("base");
+    padding: 0;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $link-hover;
+        border-color: $link-hover;
+    }
+}
+
+
+// Placeholders
+
+::-webkit-input-placeholder {
+  color: $gray;
+}
+::-moz-placeholder {
+  color: $gray;
+}
+:-ms-input-placeholder {
+  color: $gray;
+}
+:-moz-placeholder { 
+  color: $gray;
+}
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }

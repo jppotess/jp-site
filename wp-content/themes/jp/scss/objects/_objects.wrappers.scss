@@ -1,0 +1,18 @@
+.o-wrapper {
+    @include j-center($max-width: 100%);
+}
+
+.o-container {
+    @include j-center($pad: $base-spacing-unit);
+    margin-top: rem(40px);
+    margin-bottom: rem(40px);
+    overflow: hidden;
+
+    @include bp(tablet) {
+        @include j-center($pad: 40px);
+    }
+}
+
+// .o-container--inner {
+//     @include j-center($max-width: $inner-content-width)
+// }

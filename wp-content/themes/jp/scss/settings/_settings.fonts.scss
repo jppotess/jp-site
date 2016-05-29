@@ -27,20 +27,12 @@ $rb--italic:    'Roboto Italic';
 $rb--thin:      'Roboto Thin';
 
 
-/**
- * Semantic Font Map
- * use -- font(<name>);
- */
-$fonts: (
-  "display": $rb--bold,
-  "paragraph": $rb--regular,
-  "italic": $rb--italic,
-  "thin": $rb--thin,
-  "bold": $rb--bold,
-  "regular": $rb--regular,
-);
 
-@function font($key: 'primary') {
-    @return map-get($fonts, $key);
-}
+$f-display: $rb--bold;
+$f-paragraph: $rb--regular;
+$f-italic: $rb--italic;
+$f-thin: $rb--thin;
+$f-bold: $rb--bold;
+$f-regular: $rb--regular;
+
 

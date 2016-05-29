@@ -15,14 +15,6 @@
   src: url("../../fonts/Roboto-Bold.ttf") format("truetype"); }
 
 /**
- * Semantic Font Map
- * use -- font(<name>);
- */
-/**
- * Semantic Colors Map
- * use -- color(<semantic-name>)
- */
-/**
  * z-index ordering
  * use -- z-index(<name>);
  */
@@ -31,7 +23,7 @@ html:after {
   color: white;
   background-color: gray;
   content: '';
-  font-family: "Roboto bold";
+  font-family: font("display");
   padding: 1em;
   text-transform: uppercase;
   text-align: center;

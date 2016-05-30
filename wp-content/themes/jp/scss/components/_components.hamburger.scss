@@ -1,0 +1,61 @@
+.c-hamburger {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    @include screen(tablet){
+        display: none;
+    }
+
+    &:focus {
+        outline: none;
+    }  
+}
+
+    .c-hamburger__patty {
+        height: 3px;
+        width: 40px;
+        background-color: color('text');
+        position: relative;
+
+        &:before,
+        &:after {
+            height: 3px;
+            width: 40px;
+            content: "";
+            position: absolute;
+            transform: translateX(-50%);
+            background-color: color('text');
+            transition: all .3s ease;
+        }
+
+        &:before {
+            top: 12px;
+        }
+
+        &:after {
+            bottom: 12px;
+        }
+
+        &.is-active {
+            background-color: transparent;
+
+            &:before,
+            &:after {
+                width: 48px;
+                top: 0;
+            }
+
+            &:before {
+                transform: translateX(-50%) rotate(-135deg);
+            }
+
+            &:after {
+                transform: translateX(-50%) rotate(135deg);
+            }
+        }
+    }  

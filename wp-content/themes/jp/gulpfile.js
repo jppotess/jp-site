@@ -50,10 +50,10 @@ gulp.task('sass', function() {
 
 // Compile Babel es6 to JS
 gulp.task("babel", function() {
-    return gulp.src("js/**/*.js")
+    return gulp.src("js/site.js")
     .pipe(plumber(plumberErrorHandler))
         .pipe(jshint())
-        .pipe(jshint.reporter('fail'))
+        // .pipe(jshint.reporter('fail'))
     .pipe(sourcemaps.init())
     .pipe(babel({
         presets: ['es2015']

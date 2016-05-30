@@ -20,29 +20,27 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?>
 <div class="o-wrapper">
-	<header class="o-container">
-		<div>
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
+	<div class="o-container">
+		<header class="c-header">
+				<?php
+				if ( is_front_page() && is_home() ) : ?>
+					<h1 class="c-header__title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<?php else : ?>
+					<h2 class="c-header__title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h2>
+				<?php
+				endif;?>
 
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
 
-		<nav role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'jp' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+			<nav class="c-nav" role="navigation">
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu',
+					'menu_class' => 'c-nav__menu',
+					'container' => false,
+					) ); ?>
+				<button class="c-hamburger j-menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="c-hamburger__patty"></span></button>
+			</nav>
+		</header>
 
-	<div class="o-wrapper">
+	</div>
+<div class="o-wrapper">

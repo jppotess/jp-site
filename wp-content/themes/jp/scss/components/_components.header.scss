@@ -1,0 +1,22 @@
+.c-header {
+    display: flex;
+    padding: 0 rem(20px);
+}
+
+    .c-header__title {
+        @include font-size(30px, 1);
+        margin: 0;
+        flex: 1;
+        align-self: center;
+        min-width: em(165px);
+
+        a {
+            @include font-family('regular');
+            color: color('text');
+
+
+            &:hover {
+                color: color('primary');
+            }
+        }
+    }

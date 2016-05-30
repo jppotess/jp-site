@@ -5,7 +5,8 @@
     position: relative;
     text-align: center;
     z-index: 2;
-    flex: 1;
+    flex: 1.5;
+    justify-content: flex-end;
 }
 
     .c-nav__container {
@@ -16,10 +17,14 @@
     }
 
     .c-nav__menu {
-        display: flex;
+        display: none;
         align-items: stretch;
         width: 100%;
         justify-content: space-around;
+
+        @include screen(tablet){
+            display: flex;
+        }
     }
 
         .c-nav__menu__item{
@@ -35,32 +40,16 @@
 
             a {
                 flex-grow: 1;
-                color: color('primary');
+                color: color('text');
                 transition: $transition;
+                text-transform: uppercase;
+                @include font-family(regular);
 
                 &:hover {
-                    color: lighten(color('primary'), 10%)
+                    color: color('primary');
                 }
             }
         }
 
-        .c-nav__toggle {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            padding: 12px;
 
-            @include screen(tablet){
-                justify-content: flex-start;
-            }
 
-            a {
-                flex-grow: 1;
-                color: color('primary');
-                transition: $transition;
-
-                &:hover {
-                    color: lighten(color('primary'), 10%)
-                }
-            }    
-        }

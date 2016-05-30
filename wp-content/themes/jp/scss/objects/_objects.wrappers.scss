@@ -7,18 +7,16 @@
 }
 
 .o-container--outer {
-    @include j-center($pad: $base-spacing-unit);
+    flex: 1;
+    max-width: $jeet-max-width;
+    padding: rem(20px);
     margin-top: rem(40px);
     margin-bottom: rem(40px);
-    overflow: hidden;
+
 
     @include screen(tablet) {
         @include j-center($pad: 40px);
     }
-}
-
-.o-container--flex {
-    display: flex;
 }
 
 .o-container--inner {

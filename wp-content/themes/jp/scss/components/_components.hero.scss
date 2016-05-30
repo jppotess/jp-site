@@ -1,0 +1,72 @@
+.c-hero {
+    flex: 1;
+    padding: 2.5rem 1.5rem;
+}
+
+    .c-hero__body {
+        align-items: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+        .c-hero__title {
+            font-size: em(30px);
+            line-height: 1.5;
+
+            @include screen(tablet){
+                font-size: em(40px);
+            }
+
+        }
+
+        .c-hero__subtitle {
+            font-size: em(24px);
+            line-height: 1.5;
+
+            @include screen(tablet){
+                font-size: em(30px);
+            }
+        }
+
+.c-hero--fh {
+    display: flex;
+    min-height: 100vh;
+    color: $white;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: color('primary');
+    background-image: linear-gradient(141deg, darken(color('primary'), 5%) 0%, color('primary') 71%, lighten(color('primary'), 5%) 100%)
+}
+
+    .c-hero--fh__body {
+        align-items: center;
+        display: flex;
+        flex: 1;
+        padding: rem(20px);
+        text-align: center;
+
+        @include screen(mobile-l){
+            padding: rem(20px) rem(40px);
+        }
+    }
+
+        .c-hero--fh__body__title {
+            @include font-size(36px, 1.3);
+            margin-bottom: rem(10px);
+
+            @include screen(tablet){
+                @include font-size(54px);
+            }
+
+        }
+
+        .c-hero--fh__body__subtitle {
+            @include font-size(22px, 1.3);
+            @include font-family(light);
+
+            @include screen(tablet){
+                @include font-size(30px);
+            }
+        }    

@@ -21,26 +21,26 @@
 
 @mixin font-family($font-family) {
     @if $font-family == bold {
-        font-family: $rb--bold;
+        font-family: $font--bold;
     }
 
     @if $font-family == display {
-        font-family: $rb--bold;
+        font-family: $font--bold;
     }    
 
     @else if $font-family == regular {
-        font-family: $rb--regular
+        font-family: $font--regular
     }
 
     @else if $font-family == paragraph {
-        font-family: $rb--regular
+        font-family: $font--regular
     }    
 
     @else if $font-family == italic {
-        font-family: $rb--italic;
+        font-family: $font--italic;
     }       
 
-    @else if $font-family == thin {
-        font-family: $rb--thin;
+    @else if $font-family == light {
+        font-family: $font--light;
     }
 }

@@ -3,6 +3,10 @@
 }
 
 .o-container {
+    flex: 1;
+}
+
+.o-container--outer {
     @include j-center($pad: $base-spacing-unit);
     margin-top: rem(40px);
     margin-bottom: rem(40px);
@@ -13,6 +17,11 @@
     }
 }
 
+.o-container--flex {
+    display: flex;
+}
+
 .o-container--inner {
     @include j-center($max-width: $inner-content-width)
 }
+

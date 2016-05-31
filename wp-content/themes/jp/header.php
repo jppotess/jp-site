@@ -38,8 +38,8 @@
 					'menu_class' => 'c-nav__menu',
 					'container' => false,
 					) ); ?>
-				<button class="c-hamburger j-menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="c-hamburger__patty"></span></button>
 			</nav>
+			<button class="c-hamburger j-menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="c-hamburger__patty"></span></button>				
 		</header>
 
 	</div>

@@ -7,6 +7,16 @@
     z-index: 2;
     flex: 1.5;
     justify-content: flex-end;
+    transition: right .3s ease,
+                visibility .3s ease,
+                background-color .3s ease;
+
+    @include screen(mobile-l-max){
+        background-color: $black;
+        visibility: hidden;
+        right: -33%;
+        opacity: 0;
+    }
 }
 
     .c-nav__container {
@@ -44,6 +54,10 @@
                 transition: $transition;
                 text-transform: uppercase;
                 @include font-family(regular);
+
+                @include screen(mobile-l-max){
+                    color: $white;
+                }
 
                 &:hover {
                     color: color('primary');

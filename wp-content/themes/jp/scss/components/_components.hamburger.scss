@@ -14,6 +14,10 @@
     &:focus {
         outline: none;
     }  
+
+    &.is-active {
+        margin-left: rem(-20px);
+    }
 }
 
     .c-hamburger__patty {
@@ -41,7 +45,7 @@
             bottom: 12px;
         }
 
-        &.is-active {
+        .is-active &{
             background-color: transparent;
 
             &:before,

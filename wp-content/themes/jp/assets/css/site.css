@@ -698,7 +698,15 @@ h4 {
           flex: 1.5;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  -webkit-transition: right .3s ease, visibility .3s ease, background-color .3s ease;
+  transition: right .3s ease, visibility .3s ease, background-color .3s ease; }
+  @media (max-width: 767px) {
+    .c-nav {
+      background-color: #222;
+      visibility: hidden;
+      right: -33%;
+      opacity: 0; } }
 
 .c-nav__container {
   -webkit-box-align: stretch;
@@ -751,6 +759,9 @@ h4 {
     transition: all 0.2s ease;
     text-transform: uppercase;
     font-family: "OpenSans"; }
+    @media (max-width: 767px) {
+      .c-nav__menu__item a {
+        color: #fff; } }
     .c-nav__menu__item a:hover {
       color: #04aeb5; }
 
@@ -758,7 +769,9 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 1.25rem; }
+  padding: 0 1.875rem;
+  min-height: 6.25rem;
+  overflow: hidden; }
 
 .c-header__title {
   font-size: 30px;
@@ -796,6 +809,8 @@ h4 {
       display: none; } }
   .c-hamburger:focus {
     outline: none; }
+  .c-hamburger.is-active {
+    margin-left: -1.25rem; }
 
 .c-hamburger__patty {
   height: 3px;
@@ -816,19 +831,33 @@ h4 {
     top: 12px; }
   .c-hamburger__patty:after {
     bottom: 12px; }
-  .c-hamburger__patty.is-active {
+  .is-active .c-hamburger__patty {
     background-color: transparent; }
-    .c-hamburger__patty.is-active:before, .c-hamburger__patty.is-active:after {
+    .is-active .c-hamburger__patty:before, .is-active .c-hamburger__patty:after {
       width: 48px;
       top: 0; }
-    .c-hamburger__patty.is-active:before {
+    .is-active .c-hamburger__patty:before {
       -webkit-transform: translateX(-50%) rotate(-135deg);
               transform: translateX(-50%) rotate(-135deg); }
-    .c-hamburger__patty.is-active:after {
+    .is-active .c-hamburger__patty:after {
       -webkit-transform: translateX(-50%) rotate(135deg);
               transform: translateX(-50%) rotate(135deg); }
 
 body.u-mobile-menu-active {
-  margin-right: 250px; }
+  margin-right: 33%; }
+  body.u-mobile-menu-active .c-nav {
+    position: absolute;
+    width: 33%;
+    text-align: center;
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: right .3s ease, visibility .3s ease, background-color .3s linear;
+    transition: right .3s ease, visibility .3s ease, background-color .3s linear; }
+    body.u-mobile-menu-active .c-nav .c-nav__menu {
+      display: block;
+      padding: 0; }
 
 /*# sourceMappingURL=site.css.map */

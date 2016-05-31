@@ -1,20 +1,22 @@
 body.u-mobile-menu-active {
-    margin-right: 250px;
+    margin-right: 33%;
 
-    .c-header__title {
-
+    .c-nav {
+        position: absolute;
+        width: 33%;
+        text-align: center;
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        transition: right .3s ease,
+                    visibility .3s ease,
+                    background-color .3s linear;
+                    
+        .c-nav__menu {
+            display: block;
+            padding: 0;
+        }
     }
-
-    // .c-nav {
-    //     display: block;
-    //     position: absolute;
-    //     padding: 0;
-    //     // transform: translateX(-50%);
-    //     // right: -250px;
-    //     // min-width:100px;
-
-    //     .c-nav__menu {
-    //         display: block;
-    //     }
-    // }
 }

@@ -32,12 +32,12 @@
 
 .c-hero--fh {
     display: flex;
-    min-height: 100vh;
+    min-height: calc(100vh - 100px);
     color: $white;
     flex-direction: column;
     justify-content: space-between;
     background-color: color('primary');
-    background-image: linear-gradient(141deg, darken(color('primary'), 5%) 0%, color('primary') 71%, lighten(color('primary'), 5%) 100%)
+    background-image: linear-gradient(141deg, darken(color('primary'), 5%) 0%, color('primary') 71%, lighten(color('primary'), 5%) 100%);
 }
 
     .c-hero--fh__body {

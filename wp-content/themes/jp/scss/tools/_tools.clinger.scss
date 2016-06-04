@@ -1,36 +1,36 @@
-// Responsive Clinger
+// // Responsive Clinger
 
-html {
-    &:after {
-        bottom: 0;
-        color: white;
-        background-color: gray;
-        content: '';
-        font-family: font("display");
-        padding: 1em;
-        text-transform: uppercase;
-        text-align: center;
-        position: fixed;
-        width: 100%;
-        z-index: z-index('clinger');
+// html {
+//     &:after {
+//         bottom: 0;
+//         color: white;
+//         background-color: gray;
+//         content: '';
+//         font-family: font("display");
+//         padding: 1em;
+//         text-transform: uppercase;
+//         text-align: center;
+//         position: fixed;
+//         width: 100%;
+//         z-index: z-index('clinger');
 
-        // Each breakpoint
-        content: 'Mobile'; // Default Mobile
+//         // Each breakpoint
+//         content: 'Mobile'; // Default Mobile
         
-        @include screen(mobile-l) {
-            content: 'Mobile-Large';
-        }
-        @include screen(tablet) {
-            content: 'Tablet';
-        }
-        @include screen(tablet-l) {
-            content: 'Tablet-Large';
-        }
-        @include screen(desktop) {
-            content: 'Desktop';
-        }
-        @include screen(desktop-l) {
-            content: 'Desktop-Large';
-        }
-    }
-}
+//         @include screen(mobile-l) {
+//             content: 'Mobile-Large';
+//         }
+//         @include screen(tablet) {
+//             content: 'Tablet';
+//         }
+//         @include screen(tablet-l) {
+//             content: 'Tablet-Large';
+//         }
+//         @include screen(desktop) {
+//             content: 'Desktop';
+//         }
+//         @include screen(desktop-l) {
+//             content: 'Desktop-Large';
+//         }
+//     }
+// }

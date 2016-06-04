@@ -20,7 +20,14 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>
+<body <?php body_class(); ?>>
+<div class="c-overlay"></div>
+<nav class="c-mobile-nav" role="navigation">
+	<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu',
+		'menu_class' => 'c-mobile-nav__menu',
+		'container' => false,
+		) ); ?>
+</nav>
 <div class="o-wrapper">
 	<div class="o-container">
 		<header class="c-header">

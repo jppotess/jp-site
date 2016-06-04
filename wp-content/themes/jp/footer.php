@@ -12,12 +12,11 @@
 ?>
 
 	</div><!-- #content -->
-    <div class="o-wrapper">
-    	<footer role="contentinfo">
-    		<div>
-    			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'jp' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'jp' ), 'WordPress' ); ?></a>
-    			<span> | </span>
-    			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'jp' ), 'jp', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+    	<footer class="c-footer" role="contentinfo">
+    		<div class="c-footer__copyright">
+                <span>&copy; <?php echo date('Y'); ?> <a href="">John Potess</a></span>
+                |
+                <span>Powered by coffee and craft brews.</span>
     		</div><!-- .site-info -->
     	</footer><!-- #colophon -->
     </div>

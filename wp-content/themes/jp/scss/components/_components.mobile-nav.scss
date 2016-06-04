@@ -1,0 +1,30 @@
+.c-mobile-nav {
+    align-items: stretch;
+    display: flex;
+    min-height: 100px;
+    position: fixed;
+    width: 50%;
+    text-align: center;
+    z-index: 2;
+    flex: 1.5;
+    justify-content: flex-end;
+    background-color: $black;
+    top: 0;
+    right: -50%;
+    bottom: 0;
+    transition: right .3s ease,
+                visibility .3s ease,
+                background-color .3s linear;    
+
+    @include screen(tablet){
+        display: none;
+    }
+}
+
+    .c-mobile-nav__menu {
+        align-items: stretch;
+        width: 100%;
+        justify-content: space-around;
+        padding: 0;
+        display: block;
+    }

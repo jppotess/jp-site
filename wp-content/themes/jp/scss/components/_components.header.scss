@@ -3,6 +3,7 @@
     padding: 0 rem(30px);
     min-height: rem(100px);
     overflow: hidden;
+    width: 100%;
 }
 
     .c-header__title {
@@ -10,7 +11,6 @@
         margin: 0;
         flex: 1;
         align-self: center;
-        min-width: em(165px);
 
         a {
             @include font-family('regular');

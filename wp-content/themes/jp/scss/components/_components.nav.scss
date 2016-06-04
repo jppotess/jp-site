@@ -1,21 +1,15 @@
 .c-nav {
-    align-items: stretch;
-    display: flex;
-    min-height: 100px;
-    position: relative;
-    text-align: center;
-    z-index: 2;
-    flex: 1.5;
-    justify-content: flex-end;
-    transition: right .3s ease,
-                visibility .3s ease,
-                background-color .3s ease;
+    display: none;
 
-    @include screen(mobile-l-max){
-        background-color: $black;
-        visibility: hidden;
-        right: -33%;
-        opacity: 0;
+    @include screen(tablet){
+        display: flex;
+        align-items: stretch;
+        min-height: 100px;
+        position: relative;
+        text-align: center;
+        z-index: 2;
+        flex: 1.5;
+        justify-content: flex-end;
     }
 }
 
@@ -27,14 +21,7 @@
     }
 
     .c-nav__menu {
-        display: none;
-        align-items: stretch;
-        width: 100%;
-        justify-content: space-around;
-
-        @include screen(tablet){
-            display: flex;
-        }
+        display: flex;
     }
 
         .c-nav__menu__item{

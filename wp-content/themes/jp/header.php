@@ -39,15 +39,13 @@
 				<?php
 				endif;?>
 
-
 			<nav class="c-nav" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu',
 					'menu_class' => 'c-nav__menu',
 					'container' => false,
 					) ); ?>
 			</nav>
-			<button class="c-hamburger j-menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="c-hamburger__patty"></span></button>				
+			<button class="c-hamburger j-menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="c-hamburger__patty"></span></button>
 		</header>
-
 	</div>
 <div class="o-wrapper">

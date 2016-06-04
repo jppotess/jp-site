@@ -1,30 +1,30 @@
 // Fonts
 @font-face {
-  font-family: 'OpenSans Light';
-  src: url("../../fonts/OpenSans-Light.ttf")  format('truetype');
+  font-family: 'Lato Light';
+  src: url("../../fonts/Lato-Light.ttf")  format('truetype');
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url("../../fonts/OpenSans-Regular.ttf")  format('truetype');
+  font-family: 'Lato';
+  src: url("../../fonts/Lato-Regular.ttf")  format('truetype');
 }
 
 @font-face {
-  font-family: 'OpenSans Italic';
-  src: url("../../fonts/OpenSans-italic.ttf")  format('truetype');
+  font-family: 'Lato Italic';
+  src: url("../../fonts/Lato-Italic.ttf")  format('truetype');
 }
 
 @font-face {
-  font-family: 'OpenSans Bold';
-  src: url("../../fonts/OpenSans-Bold.ttf")  format('truetype');
+  font-family: 'Lato Bold';
+  src: url("../../fonts/Lato-Bold.ttf")  format('truetype');
 }
 
 
 // Font Stacks
-$font--bold:      'OpenSans Bold';
-$font--regular:   'OpenSans';
-$font--italic:    'OpenSans Italic';
-$font--light:     'OpenSans Light';
+$font--bold:      'Lato Bold';
+$font--regular:   'Lato';
+$font--italic:    'Lato Italic';
+$font--light:     'Lato Light';
 
 
 

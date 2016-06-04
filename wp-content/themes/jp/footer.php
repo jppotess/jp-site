@@ -11,16 +11,16 @@
 
 ?>
 
-	</div><!-- #content -->
+	</div>
     	<footer class="c-footer" role="contentinfo">
     		<div class="c-footer__copyright">
                 <span>&copy; <?php echo date('Y'); ?> <a href="">John Potess</a></span>
                 |
                 <span>Powered by coffee and craft brews.</span>
-    		</div><!-- .site-info -->
-    	</footer><!-- #colophon -->
+    		</div>
+    	</footer>
     </div>
-</div><!-- #page -->
+</div>
 
 <?php wp_footer(); ?>
 

@@ -1,18 +1,18 @@
 @font-face {
-  font-family: 'OpenSans Light';
-  src: url("../../fonts/OpenSans-Light.ttf") format("truetype"); }
+  font-family: 'Lato Light';
+  src: url("../../fonts/Lato-Light.ttf") format("truetype"); }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url("../../fonts/OpenSans-Regular.ttf") format("truetype"); }
+  font-family: 'Lato';
+  src: url("../../fonts/Lato-Regular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: 'OpenSans Italic';
-  src: url("../../fonts/OpenSans-italic.ttf") format("truetype"); }
+  font-family: 'Lato Italic';
+  src: url("../../fonts/Lato-Italic.ttf") format("truetype"); }
 
 @font-face {
-  font-family: 'OpenSans Bold';
-  src: url("../../fonts/OpenSans-Bold.ttf") format("truetype"); }
+  font-family: 'Lato Bold';
+  src: url("../../fonts/Lato-Bold.ttf") format("truetype"); }
 
 /**
  * z-index ordering
@@ -475,13 +475,13 @@ cite {
 
 strong,
 b {
-  font-family: "OpenSans Bold"; }
+  font-family: "Lato Bold"; }
 
 em {
-  font-family: "OpenSans Italic"; }
+  font-family: "Lato Italic"; }
 
 body {
-  font-family: "OpenSans";
+  font-family: "Lato";
   line-height: 1.45; }
 
 p {
@@ -489,7 +489,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 1.414em 0 .5em;
-  font-family: "OpenSans Bold";
+  font-family: "Lato Bold";
   line-height: 1.2; }
 
 h1 {
@@ -646,7 +646,7 @@ h4 {
   font-size: 22px;
   font-size: 1.375em;
   line-height: 1.3;
-  font-family: "OpenSans Light"; }
+  font-family: "Lato Light"; }
   @media (min-width: 768px) {
     .c-hero--fh__body__subtitle {
       font-size: 30px;
@@ -714,7 +714,7 @@ h4 {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     text-transform: uppercase;
-    font-family: "OpenSans"; }
+    font-family: "Lato"; }
     @media (max-width: 767px) {
       .c-nav__menu__item a {
         color: #fff; } }
@@ -792,7 +792,7 @@ h4 {
   -ms-flex-item-align: center;
       align-self: center; }
   .c-header__title a {
-    font-family: "OpenSans";
+    font-family: "Lato";
     color: #222; }
     .c-header__title a:hover {
       color: #04aeb5; }

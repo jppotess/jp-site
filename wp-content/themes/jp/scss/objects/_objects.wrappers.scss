@@ -1,5 +1,6 @@
 .o-wrapper {
     @include j-center($max-width: 100%);
+    @include j-cf();
 }
 
 .o-container {

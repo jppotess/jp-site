@@ -15,14 +15,16 @@ $gray--light: #BFBFBF;
 // Semantic Colors
 $site-colors: (
     "text": $black,
+    "primary-light": lighten($stormy-sea-foam-blue, 5%),
     "primary": $stormy-sea-foam-blue,
+    "primary-dark": darken($stormy-sea-foam-blue, 5%),
     "accent": $rorangey-red,
     "border": $gray--light,
 );
 
 
-$link-color: color('accent');
-$link-hover: lighten(color('accent'), 20%);
+$link-color: color('primary-dark');
+$link-hover: color('primary-light');
 $text-color: color('text');
 
 

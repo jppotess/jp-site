@@ -11,17 +11,23 @@ get_header(); ?>
             </div>
         </div>
 
-    <div class="o-container--flex">
+    <div class="o-container">
        <div class="c-hero">
             <div class="c-hero__body">
-                <h3 class="c-sub-title">Not sure where to go next?</h3>
-                <p>That's cool, it's a crazy world and we've all lose our way at some point or another.</p>
-                <h4>How about:</h4>
-                <a href="<?php get_site_url();?>/about/" alt="About"><button>Learn about me and the site</button></a>
-                <span>- OR -</span>
-                <a href="<?php get_site_url();?>/blog/" alt="Blog"><button>Check out the blog</button></a>
+                <div class="o-wrapper">
+                    <h3 class="c-hero__body__title">Not sure where to go next?</h3>
+                    <p class="c-hero__body__content">That's ok, we've all lost our way at some point.</p>
+                    <div class="c-hero__cta">
+                        <div class="o-wrapper">
+                            <h4 class="c-hero__cta__title">May I suggest checking out the:</h4>
+                            <a class="c-button" href="<?php get_site_url();?>/about/" alt="About">About Section</a>
+                            <span class="c-hero__cta__divider">- OR -</span>
+                            <a class="c-button" href="<?php get_site_url();?>/blog/" alt="Blog">Blog Section</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-       </div>
+        </div>
     </div>
 
 <?php

@@ -31,12 +31,14 @@
 
 @import 'components/components.headings';
 @import 'components/components.hero';
+@import 'components/components.hero--fh';
+@import 'components/components.hero__cta';
 @import 'components/components.nav';
 @import 'components/components.overlay';
 @import 'components/components.mobile-nav';
 @import 'components/components.header';
 @import 'components/components.hamburger';
-
+@import 'components/components.button';
 @import 'components/components.footer';
 
 @import 'utilities/utilities.mobile-menu.scss';

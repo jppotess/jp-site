@@ -1,10 +1,16 @@
 .c-header {
     display: flex;
-    padding: 0 rem(30px);
+    padding: 0 rem(40px);
     min-height: rem(100px);
     overflow: hidden;
     width: 100%;
+    max-width: $max-width;
+    margin: 0 auto;
 }
+
+    .c-header__wrapper {
+        border-bottom: 1px solid color('border');
+    }
 
     .c-header__title {
         @include font-size(30px, 1);

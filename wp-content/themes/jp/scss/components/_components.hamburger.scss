@@ -6,6 +6,7 @@
     border: none;
     cursor: pointer;
     z-index: z-index('hamburger');
+    padding: 0;
 
     @include screen(tablet){
         display: none;

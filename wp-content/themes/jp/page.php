@@ -14,8 +14,8 @@
 
 get_header(); ?>
 
-	<div class="o-container">
-		<main role="main">
+	<div class="o-container--outer">
+		<main class="c-page" role="main">
 
 			<?php
 			while ( have_posts() ) : the_post();
@@ -31,7 +31,6 @@ get_header(); ?>
 			?>
 
 		</main><!-- #main -->
-		<?php get_sidebar(); ?>
 	</div><!-- #primary -->
 
 <?php

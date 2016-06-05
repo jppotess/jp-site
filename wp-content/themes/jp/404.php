@@ -9,12 +9,12 @@
 
 get_header(); ?>
 
-	<div class="o-container">
-		<main role="main">
+	<div class="o-container--inner">
+		<main class="c-page" role="main">
 
 			<section>
-				<header>
-					<h1><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'jp' ); ?></h1>
+				<header class="c-page__header">
+					<h1 class="c-page__title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'jp' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div>

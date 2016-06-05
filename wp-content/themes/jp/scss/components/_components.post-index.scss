@@ -1,0 +1,29 @@
+.c-post-index {
+
+    .c-post {
+        margin-bottom: rem(40px);
+        padding-bottom: rem(40px);
+        border-bottom: 1px solid color(border);
+    }
+
+    .c-post__header {
+        margin: 0;
+        text-align: left;
+    }
+
+    .c-post__title {
+        @include font-family(bold);
+        margin: 0;
+    }
+
+}
+
+    .c-post-index__header {
+
+    }
+
+    .c-post-index__title {
+        @include font-family(bold);
+        text-align: center;
+        margin: 0 0 rem(60px);
+    }

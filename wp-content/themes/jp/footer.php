@@ -12,13 +12,15 @@
 ?>
 
 	</div>
-    	<footer class="c-footer" role="contentinfo">
-    		<div class="c-footer__copyright">
-                <span>&copy; <?php echo date('Y'); ?> <a href="">John Potess</a></span>
-                |
-                <span>Powered by coffee and craft brews.</span>
-    		</div>
-    	</footer>
+        <div class="c-footer__wrapper">
+        	<footer class="c-footer" role="contentinfo">
+        		<div class="c-footer__copyright">
+                    <span>&copy; <?php echo date('Y'); ?> <a href="">John Potess</a></span>
+                    |
+                    <span>Powered by coffee and IPAs</span>
+        		</div>
+        	</footer>
+        </div>
     </div>
 </div>
 

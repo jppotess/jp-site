@@ -29,7 +29,7 @@
 		) ); ?>
 </nav>
 <div class="o-wrapper">
-	<div class="o-container">
+	<div class="c-header__wrapper">
 		<header class="c-header">
 				<?php
 				if ( is_front_page() && is_home() ) : ?>

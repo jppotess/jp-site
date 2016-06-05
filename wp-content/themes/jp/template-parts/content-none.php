@@ -10,11 +10,11 @@
 ?>
 
 <section class="o-container--inner">
-	<header>
-		<h1><?php esc_html_e( 'Nothing Found', 'jp' ); ?></h1>
+	<header class="c-page__header">
+		<h1 class="c-page__title"><?php esc_html_e( 'Nothing Found', 'jp' ); ?></h1>
 	</header><!-- .page-header -->
 
-	<div>
+	<div class="c-content">
 		<?php
 		if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 

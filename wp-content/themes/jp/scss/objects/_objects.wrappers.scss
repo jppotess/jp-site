@@ -5,10 +5,12 @@
 
 .o-container {
     flex: 1;
+    max-width: $max-width;
+    margin: 0 auto;
 }
 
 .o-container--outer {
-    flex: 1;
+    display: flex;
     max-width: $jeet-max-width;
     padding: rem(20px);
     margin-top: rem(40px);
@@ -16,7 +18,7 @@
 
 
     @include screen(tablet) {
-        @include j-center($pad: 40px);
+        padding: 0 rem(40px);
     }
 }
 

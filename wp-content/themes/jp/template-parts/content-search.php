@@ -8,23 +8,24 @@
  */
 
 ?>
+<div class="o-container--inner">
+	<article class="c-search" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<header class="c-search__header">
+			<?php the_title( sprintf( '<h2 class="c-search__title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
-<article class="o-container--inner" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header>
-		<?php the_title( sprintf( '<h2><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+			<?php if ( 'post' === get_post_type() ) : ?>
+			<div class="c-meta">
+				<?php jp_posted_on(); ?>
+			</div>
+			<?php endif; ?>
+		</header>
 
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div">
-			<?php jp_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+		<div class="c-search__excerpt">
+			<?php the_excerpt(); ?>
+		</div>
 
-	<div>
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-
-	<footer>
-		<?php jp_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+		<footer class="c-search__footer">
+			<?php jp_entry_footer(); ?>
+		</footer><!-- .entry-footer -->
+	</article><!-- #post-## -->
+</div">

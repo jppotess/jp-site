@@ -1,0 +1,19 @@
+.c-page {
+
+}
+
+    .c-page__header {
+        margin-bottom: rem(80px);
+    }
+
+    .c-page__title {
+        @include font-family(bold);
+        text-align: center;
+        margin: 0;
+    }
+
+    .c-page__footer {
+
+    }
+
+

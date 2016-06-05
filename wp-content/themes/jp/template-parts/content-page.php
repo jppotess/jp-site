@@ -10,11 +10,11 @@
 ?>
 
 <article class="o-container--inner" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header>
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	<header class="c-page__header">
+		<?php the_title( '<h1 class="c-page__title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<div>
+	<div class="c-content">
 		<?php
 			the_content();
 
@@ -25,7 +25,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer>
+	<footer class="c-page__footer">
 		<?php
 			edit_post_link(
 				sprintf(

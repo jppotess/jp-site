@@ -9,13 +9,13 @@
 
 get_header(); ?>
 
-	<div class="o-container">
-		<main role="main">
+	<div class="o-container--outer">
+		<main class="c-single-post" role="main">
 
 		<?php
 		while ( have_posts() ) : the_post();
 
-			get_template_part( 'template-parts/content', get_post_format() );
+			get_template_part( 'template-parts/content', 'single-post' );
 
 			the_post_navigation();
 

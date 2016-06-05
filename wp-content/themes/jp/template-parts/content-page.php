@@ -9,11 +9,10 @@
 
 ?>
 
+<header class="c-page__header">
+	<?php the_title( '<h1 class="c-page__title">', '</h1>' ); ?>
+</header><!-- .entry-header -->
 <article class="o-container--inner" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="c-page__header">
-		<?php the_title( '<h1 class="c-page__title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
-
 	<div class="c-content">
 		<?php
 			the_content();

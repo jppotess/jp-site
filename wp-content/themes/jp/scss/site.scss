@@ -29,6 +29,8 @@
 
 @import 'objects/objects.wrappers';
 
+@import 'layouts/layouts.content-sidebar';
+
 @import 'components/components.headings';
 @import 'components/components.hero';
 @import 'components/components.hero--fh';
@@ -47,6 +49,7 @@
 @import 'components/components.single-post';
 @import 'components/components.search';
 @import 'components/components.content';
+@import 'components/components.post-nav';
 @import 'components/components.meta';
 @import 'components/components.sidebar';
 

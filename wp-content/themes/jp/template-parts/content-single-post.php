@@ -12,25 +12,22 @@
     <article class="c-post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
         <header class="c-post__header">
+            <h1 class="c-post__title">
+                <?php the_title() ?>
+            </h1>
             <?php
-                if ( is_single() ) {
-                    the_title( '<h1 class="c-post__title">', '</h1>' );
-                } else {
-                    the_title( '<h2 class=" c-h3 c-post__title h1"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-                }
-
             if ( 'post' === get_post_type() ) { ?>
-                <div 
-                    <?php if( is_single() ) { ?> 
-                        class="c-meta c-meta--single"
-                    <?php } else { ?>
-                        class="c-meta c-meta--index"
-                    <?php } ?>
-                >
+                <div class="c-meta c-meta--single">
                     <?php jp_posted_on(); ?>
                 </div>
             <?php
             } ?>
+            <div class="c-post__header__image__wrapper">
+                <a href="<?php the_permalink(); ?>">
+                    <div class="c-post__header__image">
+                    </div>
+                </a>
+            </div>            
         </header>
 
         <div class="c-content">

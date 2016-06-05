@@ -15,39 +15,33 @@
 get_header(); ?>
 
     <div class="o-container--outer">
-        <div class="o-container--inner">
-            <main class="c-post-index" role="main">
+        <header class="c-post-index__header">
+            <h1 class="c-post-index__title"><?php single_post_title(); ?></h1>
+        </header>    
+        <div class="l-content-sidebar">
+            <main class="c-post-index" role="main">        
+                <!-- <div class="o-container--inner"> -->
+                    <?php
+                    if ( have_posts() ) :
+                        while ( have_posts() ) : the_post();
 
-            <?php
-            if ( have_posts() ) :
+                            get_template_part( 'template-parts/content', 'home' );
 
-                ?>
-                    <header class="c-post-index__header">
-                        <h1 class="c-post-index__title"><?php single_post_title(); ?></h1>
-                    </header>
+                        endwhile;
 
-                <?php
+                        the_posts_navigation();
 
+                    else :
 
+                        get_template_part( 'template-parts/content', 'none' );
 
-                while ( have_posts() ) : the_post();
+                    endif; ?>
 
-                    get_template_part( 'template-parts/content', 'home' );
-
-                endwhile;
-
-                the_posts_navigation();
-
-            else :
-
-                get_template_part( 'template-parts/content', 'none' );
-
-            endif; ?>
-
+                <!-- </div> -->
             </main>
             <?php get_sidebar(); ?>
         </div>
     </div>
 
-<?php
-get_footer();
+
+<?php get_footer();

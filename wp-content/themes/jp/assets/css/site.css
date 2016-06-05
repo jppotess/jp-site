@@ -535,8 +535,11 @@ h4 {
   display: flex;
   max-width: 1280px;
   padding: 1.25rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem; }
+  margin: 2.5rem auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   @media (min-width: 768px) {
     .o-container--outer {
       padding: 0 2.5rem; } }
@@ -550,6 +553,11 @@ h4 {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0; }
+
+.l-content-sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .c-h1 {
   margin-top: 0;
@@ -961,6 +969,9 @@ h4 {
   -ms-flex-item-align: center;
       align-self: center; }
 
+.c-page {
+  margin: 0 auto; }
+
 .c-page__header {
   margin-bottom: 5rem; }
 
@@ -973,22 +984,30 @@ h4 {
   margin-bottom: 2.5rem;
   text-align: center; }
 
+.c-post__header__image {
+  height: 18.75rem;
+  width: 100%;
+  background-color: whitesmoke; }
+
 .c-post__title {
   font-family: "Lato Bold";
-  margin: 0 0 1.25rem; }
+  margin: 0 auto 1.25rem;
+  max-width: 40rem; }
 
-.c-post-index .c-post {
-  margin-bottom: 2.5rem;
-  padding-bottom: 2.5rem;
-  border-bottom: 1px solid #BFBFBF; }
-
-.c-post-index .c-post__header {
-  margin: 0;
-  text-align: left; }
-
-.c-post-index .c-post__title {
-  font-family: "Lato Bold";
-  margin: 0; }
+.c-post-index {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3; }
+  .c-post-index .c-post {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #BFBFBF; }
+  .c-post-index .c-post__header {
+    margin: 0;
+    text-align: left; }
+  .c-post-index .c-post__title {
+    font-family: "Lato Bold";
+    margin: 0; }
 
 .c-post-index__title {
   font-family: "Lato Bold";
@@ -999,6 +1018,17 @@ h4 {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3; }
+
+.c-post-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 0 1rem;
+  font-family: "Lato Bold";
+  border-bottom: 1px solid #BFBFBF; }
 
 .c-meta .author {
   font-family: "Lato Bold";
@@ -1018,6 +1048,9 @@ h4 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1; }
+  .c-sidebar .widget-title {
+    margin: 0;
+    text-align: center; }
 
 body.u-mobile-menu-active {
   margin-right: 50%; }

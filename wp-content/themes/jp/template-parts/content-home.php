@@ -17,6 +17,12 @@
             <div class="c-meta c-meta--index">
                 <?php jp_posted_on(); ?>
             </div>
+            <div class="c-post__header__image__wrapper">
+                <a href="<?php the_permalink(); ?>">
+                    <div class="c-post__header__image">
+                    </div>
+                </a>
+            </div>
         </header>
 
         <div class="c-content">

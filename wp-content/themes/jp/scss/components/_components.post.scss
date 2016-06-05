@@ -7,10 +7,18 @@
         text-align: center;
     }
 
+        .c-post__header__image {
+            height: rem(300px);
+            width: 100%;
+            background-color: $gray--lightest;
+        }
+
     .c-post__title {
         @include font-family(bold);
-        margin: 0 0 rem(20px);
+        margin: 0 auto rem(20px);
+        max-width: 40rem;
     }
+
 
     .c-post__footer {
 

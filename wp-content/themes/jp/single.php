@@ -10,27 +10,33 @@
 get_header(); ?>
 
 	<div class="o-container--outer">
-		<main class="c-single-post" role="main">
+		<div class="l-content-sidebar">
+			<main class="c-single-post" role="main">
 
-		<?php
-		while ( have_posts() ) : the_post();
+			<?php
+			while ( have_posts() ) : the_post();
 
-			get_template_part( 'template-parts/content', 'single-post' );
+				get_template_part( 'template-parts/content', 'single-post' );
+				?>
+				 <!-- the_post_navigation(); -->
+				<div class="c-post-nav">
+					<span class="c-post-nav__link .c-post-nav__link--previous"><?php previous_post_link('%link', 'Previous Post', 'no'); ?></span>
+					<span class="c-post-nav__link .c-post-nav__link--next"><?php next_post_link('%link', 'Next Post', 'no');?></span>					
+				</div>
 
-			the_post_navigation();
+				<?php
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif;
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+			endwhile;
+			?>
 
-		endwhile; // End of the loop.
-		?>
+			</main>
 
-		</main><!-- #main -->
-
-		<?php get_sidebar(); ?>
-	</div><!-- #primary -->
+			<?php get_sidebar(); ?>
+		</div>
+	</div>
 
 <?php
 get_footer();

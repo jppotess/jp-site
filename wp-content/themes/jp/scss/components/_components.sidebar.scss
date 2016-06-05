@@ -1,5 +1,4 @@
 .c-sidebar {
-
     flex: 1;
 
     .widget {
@@ -7,7 +6,8 @@
     }
 
     .widget-title {
-
+        margin: 0;
+        text-align: center;
     }
 }
 

@@ -1,0 +1,20 @@
+.c-post-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0 1rem;
+    @include font-family(bold);
+    border-bottom: 1px solid color('border');
+}
+
+    .c-post-nav__link {
+
+
+    }
+
+        .c-post-nav__link--previous {
+
+        }
+
+        .c-post-nav__link--next {
+
+        }

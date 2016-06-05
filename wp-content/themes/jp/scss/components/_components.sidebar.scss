@@ -1,13 +1,11 @@
 .c-sidebar {
     flex: 1;
+    margin-top: rem(40px);
+    padding-top: rem(40px);
+    border-top: 1px solid color(border);
 
-    .widget {
-
-    }
-
-    .widget-title {
-        margin: 0;
-        text-align: center;
+    @include screen(tablet-l){
+        border: none;
     }
 }
 

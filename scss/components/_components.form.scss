@@ -1,0 +1,21 @@
+.c-form {
+    margin: rem(40px) 0;
+}
+
+    .c-form__field {
+        margin-bottom: rem(10px);
+    }
+
+    .c-form__label {
+        @include font-family(bold);
+    }
+
+    .c-form__required {
+
+    }
+
+    .c-form__submit {
+        @include screen(mobile-l){
+            float: right;
+        }
+    }

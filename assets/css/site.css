@@ -420,21 +420,16 @@ textarea {
   padding: .5rem;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  max-width: 100%; }
+  max-width: 100%;
+  width: 100%;
+  border-color: #BFBFBF;
+  border-radius: 4px; }
   input:focus,
   textarea:focus {
     border-color: #05c6ce; }
 
-input[type="submit"] {
-  border: none;
-  color: #111;
-  background-color: transparent;
-  border-bottom: 1px solid;
-  padding: 0;
-  cursor: pointer; }
-  input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
-    color: #05c6ce;
-    border-color: #05c6ce; }
+fieldset {
+  border: none; }
 
 ::-webkit-input-placeholder {
   color: #8C8C8C; }
@@ -1113,6 +1108,19 @@ h4 {
 .widget_categories .cat-item {
   font-size: 1.25em;
   font-family: "Lato"; }
+
+.c-form {
+  margin: 2.5rem 0; }
+
+.c-form__field {
+  margin-bottom: 0.625rem; }
+
+.c-form__label {
+  font-family: "Lato Bold"; }
+
+@media (min-width: 640px) {
+  .c-form__submit {
+    float: right; } }
 
 body.u-mobile-menu-active {
   margin-right: 50%; }

@@ -6,26 +6,17 @@ textarea {
     padding: .5rem;
     transition: $transition;
     max-width: 100%;
+    width: 100%;
+    border-color: color("border");
+    border-radius: 4px;
 
     &:focus {
         border-color: $link-hover;
     }
 }
 
-input[type="submit"] {
+fieldset {
     border: none;
-    color: $black;
-    background-color: transparent;
-    border-bottom: 1px solid color("base");
-    padding: 0;
-    cursor: pointer;
-
-    &:hover,
-    &:active,
-    &:focus {
-        color: $link-hover;
-        border-color: $link-hover;
-    }
 }
 
 

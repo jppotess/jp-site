@@ -23,9 +23,8 @@
             <?php
             } ?>
             <div class="c-post__header__image__wrapper">
-                <a href="<?php the_permalink(); ?>">
-                    <div class="c-post__header__image">
-                    </div>
+                <a class="c-post__header__image__container" href="<?php the_permalink(); ?>">
+                    <?php the_post_thumbnail();?>
                 </a>
             </div>            
         </header>

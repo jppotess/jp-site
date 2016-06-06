@@ -996,15 +996,28 @@ h4 {
   margin-bottom: 2.5rem;
   padding-bottom: 2.5rem;
   border-bottom: 1px solid #BFBFBF; }
+  .c-post:last-of-type {
+    margin: 0;
+    border: none; }
 
 .c-post__header {
   margin-bottom: 2.5rem;
   text-align: center; }
 
-.c-post__header__image {
-  height: 18.75rem;
+.c-post__header__image__container {
+  max-height: 18.75rem;
   width: 100%;
-  background-color: whitesmoke; }
+  background-color: whitesmoke;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .c-post__header__image__container img {
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+    -ms-flex-item-align: center;
+        align-self: center; }
 
 .c-post__title {
   font-family: "Lato Bold";
@@ -1015,16 +1028,6 @@ h4 {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3; }
-  .c-post-index .c-post {
-    margin-bottom: 2.5rem;
-    padding-bottom: 2.5rem;
-    border-bottom: 1px solid #BFBFBF; }
-  .c-post-index .c-post__header {
-    margin: 0;
-    text-align: left; }
-  .c-post-index .c-post__title {
-    font-family: "Lato Bold";
-    margin: 0; }
 
 .c-post-index__title {
   font-family: "Lato Bold";
@@ -1055,6 +1058,12 @@ h4 {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3; }
+
+.c-content__read-more {
+  border-bottom: 1px solid #111;
+  font-family: "Lato Bold";
+  margin-bottom: 1em;
+  display: inline-block; }
 
 .c-post-nav {
   display: -webkit-box;
@@ -1090,11 +1099,20 @@ h4 {
   border-top: 1px solid #BFBFBF; }
   @media (min-width: 1024px) {
     .c-sidebar {
-      border: none; } }
+      border: none;
+      margin: 0;
+      padding: 0; } }
 
 .widget-title {
   margin: 0;
   text-align: center; }
+
+.widget_categories ul {
+  list-style: none; }
+
+.widget_categories .cat-item {
+  font-size: 1.25em;
+  font-family: "Lato"; }
 
 body.u-mobile-menu-active {
   margin-right: 50%; }

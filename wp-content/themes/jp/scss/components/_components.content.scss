@@ -10,3 +10,10 @@
         
     }
 
+    .c-content__read-more {
+        border-bottom: 1px solid $black;
+        @include font-family(bold);
+        margin-bottom: 1em;
+        display: inline-block;
+    }
+

@@ -48,14 +48,22 @@ function jp_entry_footer() {
 	if ( 'post' === get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( esc_html__( ', ', 'jp' ) );
-		if ( $categories_list && jp_categorized_blog() ) {
-			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'jp' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+		if ( $categories_list && jp_categorized_blog() ) { ?>
+			<span class="c-post__footer__links">
+				<strong>Posted in:</strong> <?php echo $categories_list; ?>
+			</span>
+		<?php 
 		}
 
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'jp' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'jp' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			printf( '<span class="c-post__footer__tags-links">' . esc_html__( '<strong>Tagged:</strong> %1$s', 'jp' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			?>
+			<span class="c-post__footer__links">
+				<strong>Tagged:</strong> <?php echo $tags_list;?>
+			</span>
+			<?php
 		}
 	}
 

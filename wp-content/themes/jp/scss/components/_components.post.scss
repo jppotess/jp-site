@@ -2,6 +2,11 @@
     margin-bottom: rem(40px);
     padding-bottom: rem(40px);
     border-bottom: 1px solid color('border');
+
+    &:last-of-type {
+        margin: 0;
+        border: none;
+    }
 }
 
     .c-post__header {
@@ -9,10 +14,19 @@
         text-align: center;
     }
 
-        .c-post__header__image {
-            height: rem(300px);
+        .c-post__header__image__container {
+            max-height: rem(300px);
             width: 100%;
             background-color: $gray--lightest;
+            overflow: hidden;
+            display: flex;
+
+            img {
+                min-width: 100%;
+                width: 100%;
+                height: auto;
+                align-self: center;
+            }
         }
 
     .c-post__title {
@@ -21,8 +35,11 @@
         max-width: 40rem;
     }
 
-
     .c-post__footer {
 
     }
+
+        .c-post__footer__links {
+
+        }
 

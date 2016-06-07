@@ -1,16 +1,32 @@
 .c-h1 {
     margin-top: 0;
-    font-size: 3.157em;
+    font-size: 2.441em;
+
+    @include screen(tablet){
+        font-size: 3.157em;
+    }
 }
 
 .c-h2 {
-    font-size: 2.369em;
+    font-size: 1.953em;
+
+    @include screen(tablet){
+        font-size: 2.369em;
+    }
 }
 
 .c-h3 {
-    font-size: 1.777em;
+    font-size: 1.563em;
+
+    @include screen(tablet){
+        font-size: 1.777em;
+    }
 }
 
 .c-h4 {
-    font-size: 1.333em;
+    font-size: 1.25em;
+
+    @include screen(tablet){
+        font-size: 1.333em;
+    }
 }

@@ -1,0 +1,36 @@
+.c-comments-list {
+    list-style: none;
+}
+
+    .comment{
+        padding: 1rem;
+        border-radius: 2px;
+    }
+
+
+
+    .bypostauthor{
+        border: solid 1px $gray--lightest;
+    }
+
+    .comment-meta {
+        font-size: em(14px);
+    }
+
+        .comment-author {
+
+            img {
+                float: left;
+                margin-right: rem(10px);
+            }
+        }
+
+        .comment-metadata {
+            margin-top: rem(10px);
+        }
+
+    .comment-reply-link {
+        @include font-family(bold);
+        padding-bottom: 1px;
+        border-bottom: 1px solid $black;
+    }

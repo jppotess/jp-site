@@ -47,14 +47,15 @@ if ( post_password_required() ) {
 		</nav><!-- #comment-nav-above -->
 		<?php endif; // Check for comment navigation. ?>
 
-		<ol>
+		<ul class="c-comments-list">
 			<?php
 				wp_list_comments( array(
 					'style'      => 'ol',
 					'short_ping' => true,
+					'avatar_size' => 64
 				) );
 			?>
-		</ol><!-- .comment-list -->
+		</ul><!-- .comment-list -->
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 		<nav role="navigation">
@@ -79,7 +80,15 @@ if ( post_password_required() ) {
 	<?php
 	endif;
 
-	comment_form();
-	?>
+	$jp_comment_args = array(
+		'class_submit'		=> 'c-form__submit c-button',
+		'comment_field'		=> '<p class="c-form__field"><label for="comment">' . _x( 'Comment', 'noun' ) .
+    '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true">' .
+    '</textarea></p>',
+	);?>
+
+	<div class="c-form">
+		<?php comment_form($jp_comment_args); ?>
+	</div>
 
 </div><!-- #comments -->

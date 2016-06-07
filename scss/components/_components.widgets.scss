@@ -1,21 +1,28 @@
 .widget {
-
+    padding-left: 2.5rem;
 }
 
-.widget-title {
-    margin: 0;
-    text-align: center;
-}
-
-// Categories Widget
-.widget_categories {
-
-    ul {
-        list-style: none;
+    .widget-title {
+        margin: 0;
     }
 
-    .cat-item {
-        font-size: em(20px);
-        @include font-family(regular);
+    // Categories Widget
+    .widget_categories {
+
+        ul {
+            list-style: none;
+            padding-left: 1rem;
+            margin: 0;
+
+            @include screen(tablet-l){
+                padding: 1rem 0 1rem;
+            }
+        }
+
+        .cat-item {
+            font-size: 1em;
+            text-decoration: underline;
+            margin-bottom: .8em;
+            @include font-family(light);
+        }
     }
-}

@@ -478,11 +478,12 @@ em {
   font-family: "Lato Italic"; }
 
 body {
-  font-family: "Lato";
+  font-family: "Lato Light";
   line-height: 1.6; }
 
 p {
-  margin-bottom: 1.3em; }
+  margin-bottom: 1.3em;
+  font-size: 1.25em; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 1.414em 0 .5em;
@@ -492,16 +493,28 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   margin-top: 0;
-  font-size: 3.1em; }
+  font-size: 2.441em; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3.157em; } }
 
 h2 {
-  font-size: 2.3em; }
+  font-size: 1.953em; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 2.369em; } }
 
 h3 {
-  font-size: 1.7em; }
+  font-size: 1.563em; }
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 1.777em; } }
 
 h4 {
   font-size: 1.25em; }
+  @media (min-width: 768px) {
+    h4 {
+      font-size: 1.333em; } }
 
 .o-wrapper {
   width: auto;
@@ -568,16 +581,28 @@ h4 {
 
 .c-h1 {
   margin-top: 0;
-  font-size: 3.157em; }
+  font-size: 2.441em; }
+  @media (min-width: 768px) {
+    .c-h1 {
+      font-size: 3.157em; } }
 
 .c-h2 {
-  font-size: 2.369em; }
+  font-size: 1.953em; }
+  @media (min-width: 768px) {
+    .c-h2 {
+      font-size: 2.369em; } }
 
 .c-h3 {
-  font-size: 1.777em; }
+  font-size: 1.563em; }
+  @media (min-width: 768px) {
+    .c-h3 {
+      font-size: 1.777em; } }
 
 .c-h4 {
-  font-size: 1.333em; }
+  font-size: 1.25em; }
+  @media (min-width: 768px) {
+    .c-h4 {
+      font-size: 1.333em; } }
 
 .c-hero {
   -webkit-box-flex: 1;
@@ -974,13 +999,14 @@ h4 {
   padding: 1.25rem 0;
   margin: 0 auto;
   -ms-flex-item-align: center;
-      align-self: center; }
+      align-self: center;
+  text-align: left; }
 
 .c-page {
   margin: 0 auto; }
 
 .c-page__header {
-  margin-bottom: 5rem; }
+  margin-bottom: 4rem; }
 
 .c-page__title {
   font-family: "Lato Bold";
@@ -1086,9 +1112,9 @@ h4 {
   margin-bottom: 1.25rem; }
 
 .c-sidebar {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
   margin-top: 2.5rem;
   padding-top: 2.5rem;
   border-top: 1px solid #BFBFBF; }
@@ -1098,19 +1124,32 @@ h4 {
       margin: 0;
       padding: 0; } }
 
+.widget {
+  padding-left: 2.5rem; }
+
 .widget-title {
-  margin: 0;
-  text-align: center; }
+  margin: 0; }
 
 .widget_categories ul {
-  list-style: none; }
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0; }
+  @media (min-width: 1024px) {
+    .widget_categories ul {
+      padding: 1rem 0 1rem; } }
 
 .widget_categories .cat-item {
-  font-size: 1.25em;
-  font-family: "Lato"; }
+  font-size: 1em;
+  text-decoration: underline;
+  margin-bottom: .8em;
+  font-family: "Lato Light"; }
 
 .c-form {
-  margin: 2.5rem 0; }
+  margin: 2.5rem auto;
+  max-width: 40rem; }
+
+.c-form__title {
+  max-width: 40rem; }
 
 .c-form__field {
   margin-bottom: 0.625rem; }
@@ -1120,7 +1159,33 @@ h4 {
 
 @media (min-width: 640px) {
   .c-form__submit {
-    float: right; } }
+    float: left;
+    width: auto; } }
+
+.c-comments-list {
+  list-style: none; }
+
+.comment {
+  padding: 1rem;
+  border-radius: 2px; }
+
+.bypostauthor {
+  border: solid 1px whitesmoke; }
+
+.comment-meta {
+  font-size: 0.875em; }
+
+.comment-author img {
+  float: left;
+  margin-right: 0.625rem; }
+
+.comment-metadata {
+  margin-top: 0.625rem; }
+
+.comment-reply-link {
+  font-family: "Lato Bold";
+  padding-bottom: 1px;
+  border-bottom: 1px solid #111; }
 
 body.u-mobile-menu-active {
   margin-right: 50%; }

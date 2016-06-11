@@ -16,7 +16,7 @@ get_header(); ?>
             <div class="c-hero__body">
                 <div class="o-wrapper">
                     <h3 class="c-hero__body__title">Not sure where to go next?</h3>
-                    <p class="c-hero__body__content">It's ok, we all lose our way from time to time.</p>
+                    <p class="c-hero__body__content">It's ok, we all lose our way sometimes.</p>
                     <div class="c-hero__cta">
                         <div class="o-wrapper">
                             <h4 class="c-hero__cta__title">May I suggest the following:</h4>

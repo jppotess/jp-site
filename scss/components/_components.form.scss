@@ -25,3 +25,8 @@
             width: auto;
         }
     }
+
+    // fix to formidable forms not seperating design from functionality
+    .frm_hidden {
+        display: none;
+    }

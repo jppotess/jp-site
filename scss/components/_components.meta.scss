@@ -2,7 +2,6 @@
 
     .author {
         @include font-family(bold);
-        text-decoration: underline;
         transition: $transition;
 
         &:hover {

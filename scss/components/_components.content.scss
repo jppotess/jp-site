@@ -1,5 +1,32 @@
 .c-content {
+    a {
+        color: $link-color;
+        transition: $transition;
+        @include font-family(regular);
 
+        &:hover,
+        &:active,
+        &:focus {
+            color: $link-hover;
+        }
+    }
+
+    .c-content__read-more {
+        border-bottom: 2px solid $link-color;
+        @include font-family(bold);
+        line-height: 1.2;
+        margin-bottom: 1em;
+        display: inline-block;
+        transition: $transition;
+        @include font-family(bold);
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $link-hover;
+            border-bottom-color: $link-hover;
+        }
+    }           
 }
 
     .c-content__header {
@@ -10,10 +37,6 @@
         
     }
 
-    .c-content__read-more {
-        border-bottom: 1px solid $black;
-        @include font-family(bold);
-        margin-bottom: 1em;
-        display: inline-block;
-    }
+ 
+
 

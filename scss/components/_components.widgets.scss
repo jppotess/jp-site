@@ -11,7 +11,8 @@
 
         ul {
             list-style: none;
-            padding-left: 1rem;
+            padding: 0;
+            padding-top: rem(12px);
             margin: 0;
 
             @include screen(tablet-l){
@@ -21,8 +22,21 @@
 
         .cat-item {
             font-size: 1em;
-            text-decoration: underline;
             margin-bottom: .8em;
             @include font-family(light);
+
+            a {
+                @include font-family(bold);
+                line-height: 1.2;
+                display: inline-block;
+                transition: $transition;
+                @include font-family(bold);
+
+                &:hover,
+                &:active,
+                &:focus {
+                    color: $link-hover;
+                }
+            }
         }
     }

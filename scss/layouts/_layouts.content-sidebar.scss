@@ -1,8 +1,8 @@
 .l-content-sidebar {
-    display: flex;
-    flex-direction: column;
+    display: block;
 
     @include screen(tablet-l){
+        display: flex;
         flex-direction: row;
     }
 }

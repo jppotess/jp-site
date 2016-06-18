@@ -1,5 +1,13 @@
 .widget {
     padding-left: 2.5rem;
+
+    @include screen(tablet-l){
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0 auto;
+        flex-direction: column;
+    }
 }
 
     .widget-title {

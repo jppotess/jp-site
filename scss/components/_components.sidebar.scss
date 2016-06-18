@@ -3,11 +3,14 @@
     margin-top: rem(40px);
     padding-top: rem(40px);
     border-top: 1px solid color(border);
+    display: flex;
+
 
     @include screen(tablet-l){
         border: none;
         margin: 0;
-        padding: 0;
+        padding-top: 0;
+        display: flex;
     }
 }
 

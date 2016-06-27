@@ -18,10 +18,13 @@
         flex: 1;
         align-self: center;
 
+        @include screen(tablet){
+            flex: none;
+        }
+
         a {
             @include font-family('regular');
             color: color('text');
-
 
             &:hover {
                 color: color('primary');

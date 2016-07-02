@@ -81,7 +81,7 @@ if ( post_password_required() ) {
 	endif;
 
 	$jp_comment_args = array(
-		'class_submit'		=> 'c-form__submit c-button',
+		'class_submit'		=> 'c-form__submit c-button u-float-none',
 		'comment_field'		=> '<p class="c-form__field"><label for="comment">' . _x( 'Comment', 'noun' ) .
     '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true">' .
     '</textarea></p>',

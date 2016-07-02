@@ -8,13 +8,10 @@
 @import 'settings/settings.global';
 @import 'settings/settings.grid';
 
-@import 'vendor/jeet/jeet';
-
 @import 'tools/tools.clearfix';
 @import 'tools/tools.breakpoints';
 @import 'tools/tools.fonts';
 @import 'tools/tools.clinger';
-@import 'tools/tools.jeet-edit-view';
 
 @import 'generic/generic.normalize';
 @import 'generic/generic.box-sizing';
@@ -58,6 +55,7 @@
 @import 'components/components.comments-list';
 
 @import 'utilities/utilities.mobile-menu.scss';
+@import 'utilities/utilities.helpers';
 
 @import 'trumps/trumps.trumps.scss';
 

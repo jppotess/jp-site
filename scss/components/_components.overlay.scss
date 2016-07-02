@@ -7,5 +7,5 @@
     opacity: 0;
     right: 0;
     transition: right .3s ease;
-    z-index: overlay;
+    z-index: z-index('overlay');
 }

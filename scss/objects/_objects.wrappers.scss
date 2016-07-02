@@ -5,13 +5,13 @@
 
 .o-container {
     flex: 1;
-    max-width: $max-width;
+    max-width: $max-container-width;
     margin: 0 auto;
 }
 
 .o-container--outer {
     display: flex;
-    max-width: $jeet-max-width;
+    max-width: $max-site-width;
     padding: rem(20px);
     margin: rem(40px) auto;
     flex-direction: column;
@@ -23,6 +23,8 @@
 }
 
 .o-container--inner {
-    @include j-center($max-width: $inner-content-width)
+    margin: 0 auto;
+    width: auto;
+    max-width: 800px;
 }
 
